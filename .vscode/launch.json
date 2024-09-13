@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "hanoi_learn_e4e9753b"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift",
+            "name": "Debug swift (projects/hanoi_learn_swift)",
+            "program": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift/.build/debug/swift",
+            "preLaunchTask": "swift: Build Debug swift (projects/hanoi_learn_swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift",
+            "name": "Release swift (projects/hanoi_learn_swift)",
+            "program": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift/.build/release/swift",
+            "preLaunchTask": "swift: Build Release swift (projects/hanoi_learn_swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift",
+            "name": "Debug hanoi_learn_swift (projects/hanoi_learn_swift)",
+            "program": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift/.build/debug/hanoi_learn_swift",
+            "preLaunchTask": "swift: Build Debug hanoi_learn_swift (projects/hanoi_learn_swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift",
+            "name": "Release hanoi_learn_swift (projects/hanoi_learn_swift)",
+            "program": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift/.build/release/hanoi_learn_swift",
+            "preLaunchTask": "swift: Build Release hanoi_learn_swift (projects/hanoi_learn_swift)"
+        }
+    ]
+}

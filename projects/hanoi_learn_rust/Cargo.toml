@@ -1,0 +1,7 @@
+[package]
+name = "hanoi_learn-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eval = "0.4.3"

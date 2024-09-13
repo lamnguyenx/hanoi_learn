@@ -19,13 +19,13 @@
 ## go
 This will create go.mod file:
 ```bash
-cd src/hanoi_learn/go
+cd projects/hanoi_learn_go
 go mod init hanoi_learn-go
 ```
 
 then we have to create common.go myself
 ```bash
-touch src/hanoi_learn/go/common.go
+touch projects/hanoi_learn_go/common.go
 ```
 
 in this file we declare main package -> later build
@@ -40,11 +40,11 @@ write this to `Cargo.toml`
 
 resolver = "2"
 members = [
-    "src/hanoi_learn/rust",
+    "projects/hanoi_learn_rust",
 ]
 ```
 
-Then inside the subfolder `src/hanoi_learn/rust`,
+Then inside the subfolder `projects/hanoi_learn_rust`,
 run `cargo init`, or from the direct parent, run `cargo new`
 
 `main.rs` must be named like that, not like in `go`
@@ -99,7 +99,7 @@ Here's the updated comparison table with Python listed before Go:
 | Overflow Behavior              | Automatically promotes to long | Panics in debug mode; wraps in release | Undefined behavior (if not handled) | Panics on overflow    |
 | Type Safety                   | Dynamically typed     | Strongly typed         | Weakly typed           | Strongly typed        |
 ### Notes:
-- **Division Behavior**: 
+- **Division Behavior**:
   - In Python, the `/` operator performs floating-point division, while `//` is used for integer division.
 - **Overflow Handling**:
   - **Python**: Automatically promotes integers to long if they exceed the maximum value of an integer.

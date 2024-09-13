@@ -2,5 +2,5 @@
 
 resolver = "2"
 members = [
-    "src/hanoi_learn/rust",
+    "projects/hanoi_learn_rust",
 ]

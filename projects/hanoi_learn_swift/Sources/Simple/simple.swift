@@ -1,0 +1,2 @@
+
+func simple() { print("SIMPLLLLLE") }
