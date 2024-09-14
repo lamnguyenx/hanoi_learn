@@ -1,8 +1,4 @@
-func main() {
-    // mainx()  // Call the function from miscs.swift directly
-    print("hey")
-    mainx()
-    simple()
-}
-
-main()
+miscs()
+control_flow()
+functions_and_closures()
+objects_and_classes()
