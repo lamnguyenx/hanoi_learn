@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
+from hanoi_utils_python import common
 
 
 def misc():
+    
+    common.lazy_panda()
 
     ### OPERATIONS
     ## ------------------------------------------------

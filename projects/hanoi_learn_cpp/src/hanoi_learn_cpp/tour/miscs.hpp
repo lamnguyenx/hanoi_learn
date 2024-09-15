@@ -6,11 +6,16 @@
 
 #define FMT_HEADER_ONLY
 #include <fmt/format.h>
+#include <hanoi_utils_cpp/common.hpp>
+
 
 using namespace std;
 using json = nlohmann::json;
 
 void miscs() {
+
+    lazy_panda();
+
     cout << boolalpha;
     string intro = R"(
     PyTorch is a machine learning library based on the Torch library
