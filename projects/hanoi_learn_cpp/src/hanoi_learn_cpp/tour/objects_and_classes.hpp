@@ -1,10 +1,7 @@
 #include <iostream>
 #include <string>
 
-using std::boolalpha;
-using std::cout;
-using std::endl;
-using std::string;
+using namespace std;
 
 class EPower0 {
    public:

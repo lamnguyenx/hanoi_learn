@@ -33,7 +33,7 @@ rust:
 cpp:
 	cd projects/hanoi_learn_cpp && \
 	mkdir -p build && cd build && \
-	(cmake .. && make) 2>&1 | grep -i -A 100 -B 2 error | pygmentize || \
+	(cmake .. && make) 2>&1 | pygmentize | grep -i -A 100 -B 2 error || \
 	./out \
 		2>&1 | pygmentize | sed 's/^/cpp   | /'
 
@@ -41,7 +41,7 @@ cpp:
 
 swift:
 	cd projects/hanoi_learn_swift && \
-	(swift build) 2>&1 | grep -i -A 100 -B 2 error | pygmentize || \
+	(swift build) 2>&1 | pygmentize | grep -i -A 100 -B 2 error || \
 	$$(swift build --show-bin-path)/hanoi_learn_swift \
 		2>&1 | pygmentize | sed 's/^/swift | /'
 

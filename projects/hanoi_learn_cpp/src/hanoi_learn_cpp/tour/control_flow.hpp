@@ -2,8 +2,7 @@
 #include <map>
 #include <vector>
 
-using std::cout;
-using std::endl;
+using namespace std;
 
 void control_flow() {
     // condition

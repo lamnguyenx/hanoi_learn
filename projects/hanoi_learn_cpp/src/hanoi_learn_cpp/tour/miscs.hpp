@@ -7,18 +7,13 @@
 #define FMT_HEADER_ONLY
 #include <fmt/format.h>
 
-using std::boolalpha;
-using std::codecvt;
-using std::cout;
-using std::endl;
-
+using namespace std;
 using json = nlohmann::json;
 
 void miscs() {
     cout << boolalpha;
     string intro = R"(
     PyTorch is a machine learning library based on the Torch library
-U
     It is used for applications such as computer vision and natural language processing.
 
     PyTorch is originally developed by Meta AI andnow part of the Linux Foundation umbrella.
