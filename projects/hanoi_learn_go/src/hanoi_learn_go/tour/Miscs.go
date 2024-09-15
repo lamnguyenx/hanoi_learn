@@ -2,13 +2,7 @@ package tour
 
 import "fmt"
 import "reflect"
-
-// CLASSES
-type MyString string
-
-func (s MyString) Length() int {
-	return len(s)
-}
+import "hanoi_learn_go/src/hanoi_utils_go"
 
 // FUNCTIONS
 func Miscs() {
@@ -43,7 +37,7 @@ func Miscs() {
 	fmt.Printf("'test' -> compilation error\n")
 
 	hello_len :=
-		MyString("Hello").Length()
+		hanoi_utils_go.NiceString("Hello").Length()
 
 	fmt.Println(hello_len)
 
