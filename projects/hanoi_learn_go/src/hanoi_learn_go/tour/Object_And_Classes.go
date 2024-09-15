@@ -1,10 +1,8 @@
 package tour
 
-import (
-	"fmt"
-)
+import "fmt"
 
-// ---------------------------------
+// FUNCTIONS
 type EPower0 struct {
 	U     float64
 	I     float64
@@ -31,9 +29,8 @@ func (e *EPower0) get_watt() float64 {
 	return e.U * e.I
 }
 
-// ---------------------------------
-
-func main2() {
+// OPERATIONS
+func Object_And_Classes() {
 
 	var EP0 = EPower0__init(7, 2)
 	EP0.brand = "NVIDIA"

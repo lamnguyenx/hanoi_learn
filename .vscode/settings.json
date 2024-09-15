@@ -6,6 +6,7 @@
     "java.project.sourcePaths": [
         "projects/hanoi_learn_java/src",
     ],
+    "editor.links": true,
     "files.associations": {
         "*.uml": "plantuml",
         "*.config": "shellscript",
