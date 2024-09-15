@@ -10,8 +10,8 @@ python:
 		2>&1 | sed 's/^/py    | /'
 
 go:
-	cd projects/hanoi_learn_go/src/hanoi_learn_go && \
-	go build -o out && \
+	cd projects/hanoi_learn_go && \
+	go build -o out src/main.go && \
 	./out \
 		2>&1 | sed 's/^/go    | /'
 
