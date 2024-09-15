@@ -54,6 +54,54 @@
             "name": "Release hanoi_learn_swift (projects/hanoi_learn_swift)",
             "program": "${workspaceFolder:hanoi_learn}/projects/hanoi_learn_swift/.build/release/hanoi_learn_swift",
             "preLaunchTask": "swift: Build Release hanoi_learn_swift (projects/hanoi_learn_swift)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/exp/HanoiLearn",
+            "name": "Debug App (exp/HanoiLearn)",
+            "program": "${workspaceFolder:hanoi_learn}/exp/HanoiLearn/.build/debug/App",
+            "preLaunchTask": "swift: Build Debug App (exp/HanoiLearn)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/exp/HanoiLearn",
+            "name": "Release App (exp/HanoiLearn)",
+            "program": "${workspaceFolder:hanoi_learn}/exp/HanoiLearn/.build/release/App",
+            "preLaunchTask": "swift: Build Release App (exp/HanoiLearn)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/advanced/HanoiLearn",
+            "name": "Debug App (advanced/HanoiLearn)",
+            "program": "${workspaceFolder:hanoi_learn}/advanced/HanoiLearn/.build/debug/App",
+            "preLaunchTask": "swift: Build Debug App (advanced/HanoiLearn)"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "sourceLanguages": [
+                "swift"
+            ],
+            "args": [],
+            "cwd": "${workspaceFolder:hanoi_learn}/advanced/HanoiLearn",
+            "name": "Release App (advanced/HanoiLearn)",
+            "program": "${workspaceFolder:hanoi_learn}/advanced/HanoiLearn/.build/release/App",
+            "preLaunchTask": "swift: Build Release App (advanced/HanoiLearn)"
         }
     ]
 }
