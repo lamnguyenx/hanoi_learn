@@ -10,9 +10,9 @@ python:
 		2>&1 | sed 's/^/py    | /'
 
 go:
-	cd projects/hanoi_learn_go && \
-	go build -o out src/main.go && \
-	./out \
+	cd projects/hanoi_learn_go/src && \
+	go build -o .build/main main.go && \
+	.build/main \
 		2>&1 | sed 's/^/go    | /'
 
 # RUSTFLAGS="-A warnings -A notes"

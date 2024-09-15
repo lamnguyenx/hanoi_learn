@@ -1,6 +1,6 @@
 package main
 
-import "hanoi_learn_go/src/hanoi_learn_go/tour"
+import "hanoi_learn_go/hanoi_learn_go/tour"
 
 func main() {
 

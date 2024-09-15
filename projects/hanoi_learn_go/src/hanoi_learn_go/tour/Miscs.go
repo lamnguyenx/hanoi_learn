@@ -2,7 +2,7 @@ package tour
 
 import "fmt"
 import "reflect"
-import "hanoi_learn_go/src/hanoi_utils_go"
+import "hanoi_learn_go/hanoi_utils_go"
 
 // FUNCTIONS
 func Miscs() {
