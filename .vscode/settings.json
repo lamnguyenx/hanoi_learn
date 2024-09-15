@@ -3,6 +3,9 @@
     "python.analysis.extraPaths": [
         "projects/hanoi_learn_python/src",
     ],
+    "java.project.sourcePaths": [
+        "projects/hanoi_learn_java/src",
+    ],
     "files.associations": {
         "*.uml": "plantuml",
         "*.config": "shellscript",

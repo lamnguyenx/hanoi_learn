@@ -49,6 +49,5 @@ swift:
 
 java:
 	cd projects/hanoi_learn_java && \
-	java Main.java \
+	java src/hanoi_learn_java/Main.java \
 		2>&1 | sed 's/^/java  | /'
-
