@@ -6,21 +6,21 @@ all: py go rust cpp swift
 python:
 	export PYTHONPATH="$$(pwd)/projects/hanoi_learn_python/src" && \
 	cd projects/hanoi_learn_python && \
-	./main.py \
+	./main.py | pygmentize \
 		2>&1 | sed 's/^/py    | /'
 
 go:
 	cd projects/hanoi_learn_go/src && \
-	go build -o .build/main main.go && \
+	go build -o .build/main main.go | pygmentize && \
 	.build/main \
-		2>&1 | sed 's/^/go    | /'
+		2>&1 | pygmentize | sed 's/^/go    | /'
 
 # RUSTFLAGS="-A warnings -A notes"
 rust:
 	cd projects/hanoi_learn_rust && \
-	cargo build --quiet --target-dir=exp && \
+	cargo build --quiet --target-dir=exp | pygmentize && \
 	exp/debug/hanoi_learn-rust \
-		2>&1 | sed 's/^/rust  | /'
+		2>&1 | pygmentize | sed 's/^/rust  | /'
 
 # run xmake f --toolchain=gcc -c if you switch machine to clear caches
 # cpp:
@@ -33,21 +33,21 @@ rust:
 cpp:
 	cd projects/hanoi_learn_cpp && \
 	mkdir -p build && cd build && \
-	(cmake .. && make) 2>&1 | grep -i -A 100 -B 2 error || \
+	(cmake .. && make) 2>&1 | grep -i -A 100 -B 2 error | pygmentize || \
 	./out \
-		2>&1 | sed 's/^/cpp   | /'
+		2>&1 | pygmentize | sed 's/^/cpp   | /'
 
 
 
 swift:
 	cd projects/hanoi_learn_swift && \
-	(swift build) 2>&1 | grep -i -A 100 -B 2 error || \
+	(swift build) 2>&1 | grep -i -A 100 -B 2 error | pygmentize || \
 	$$(swift build --show-bin-path)/hanoi_learn_swift \
-		2>&1 | sed 's/^/swift | /'
+		2>&1 | pygmentize | sed 's/^/swift | /'
 
 
 
 java:
 	cd projects/hanoi_learn_java && \
 	java src/hanoi_learn_java/Main.java \
-		2>&1 | sed 's/^/java  | /'
+		2>&1 | pygmentize | sed 's/^/java  | /'

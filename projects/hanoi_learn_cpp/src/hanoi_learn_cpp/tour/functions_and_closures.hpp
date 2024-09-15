@@ -3,7 +3,8 @@
 #include <string>
 #include <tuple>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 bool f1(string s1, string s2) { return s1.length() > s2.length(); }
 

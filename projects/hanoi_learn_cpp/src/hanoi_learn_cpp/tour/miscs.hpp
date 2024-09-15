@@ -7,7 +7,11 @@
 #define FMT_HEADER_ONLY
 #include <fmt/format.h>
 
-using namespace std;
+using std::boolalpha;
+using std::codecvt;
+using std::cout;
+using std::endl;
+
 using json = nlohmann::json;
 
 void miscs() {
