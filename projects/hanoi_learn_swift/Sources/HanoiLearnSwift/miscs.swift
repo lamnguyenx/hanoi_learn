@@ -1,9 +1,5 @@
 import Foundation
 
-func typ<T>(_ value: T) -> String {
-    String(describing: T.self)
-}
-
 // swift-format-ignore
 func main_00() {
     // ------------------------------------------------
