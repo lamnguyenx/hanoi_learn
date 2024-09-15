@@ -7,9 +7,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import hanoi_utils_java.Common;
+
 public class Miscs {
 
     public static void run() {
+
+        Common.lazy_panda();
+
         // List-like
         List<String> letters0 = new ArrayList<>();
 

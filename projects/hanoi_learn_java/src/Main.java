@@ -1,6 +1,3 @@
-package hanoi_learn_java;
-
-// technical
 import hanoi_learn_java.tour.Miscs;
 import hanoi_learn_java.tour.ControlFlow;
 import hanoi_learn_java.tour.TypeCasting;
