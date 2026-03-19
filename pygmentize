@@ -1,0 +1,49 @@
+[]
+[a, d, c, e]
+{}
+{a=97, b=98, c=99}
+x > 5
+y != 5
+g2: ?
+op01: 5
+0
+1
+2
+3
+4
+10
+8
+prime 2
+prime 3
+prime 5
+prime 7
+prime 11
+fibon 1
+fibon 1
+fibon 2
+fibon 3
+fibon 5
+squar 1
+squar 4
+squar 9
+squar 16
+count: 5
+count: 5
+i_val: 10
+d_val: 10.0
+i_val_2: 10
+tc_1_1: 10
+tc_1_2: 10.0
+null
+4
+5
+NVIDIA
+49.0
+GE
+14.0
+3.5
+(1)
+(1)(2)
+(1)(2)
+(1)(2)(3)
+(1)(2)(3)
